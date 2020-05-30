@@ -1,3 +1,210 @@
 @import './main.scss';
 @import  './fontawesome/all.min.css';
 
+.component-parts {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+
+    &__content {
+        width: 100%;
+    }
+}
+
+.line-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-width: 80px;
+    background-color:  $gray;
+    margin-right: 1px;
+}
+
+.line {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__logo-wrapper {
+        width: 31px;
+        margin: 50px auto;
+    }
+
+    &__social-wrapper {
+        width: 100%;
+        height: calc(100vh/3);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        align-items: center;
+
+        & i {
+            font-size: 3rem;
+        }
+
+        & a {
+            text-decoration: none;
+            color: $accent-light;
+
+            &:hover {
+                color: $accent;
+            }
+        }
+    }
+}
+
+.box {
+    width: 100%;
+}
+
+
+
+//------------------------header---------------------//@extend
+
+.header {
+    width: 100%;
+    padding-top: 1px;
+    background: $accent-light;
+    box-shadow: 0 60px 60px -15px black;
+    margin-bottom: 150px;
+
+    &__content {
+        width: 100%;
+        height: 300px;
+        position: relative;
+        padding: 50px 0 0 100px;
+    }
+
+    &__title {
+        font-size: 3rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        position: sticky;
+        top: 0;
+        color: $accent;
+        margin-bottom: 0;
+    }
+
+    &__background-text {
+        position: absolute;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        height: 100%;
+        color: $white-transparent;
+        font-size: 33rem;
+        line-height: .6;
+        margin: 0;
+    }
+}
+
+
+// -------------------------------main-----------------------------//
+
+
+.articles-wrapper {
+    width: 70%;
+    padding: 1px;
+}
+
+.article {
+    margin: 50px 0 100px;
+    &__article-wrapper {
+        width: 100%;
+        height: 100%;
+        padding: 50px;
+        background: radial-gradient( closest-side circle at 50% 50%, hsla(180, 99%, 100%, 0.6), white) ;
+    }
+
+    &__date {
+        font-weight: 700;
+    }
+    
+    &__title {
+        font-size: 2.5rem;
+        margin-top: 10px;
+    }
+
+    &__autor {
+        display: flex;
+        margin-bottom: 50px;
+        height: 80px;
+    }
+
+    &__autor-avatar {
+        position: relative;
+        width: 80px;
+        height: auto;
+        margin-right: 50px;
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            line-height: 1;
+            content: '\f556';
+            font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+            font-size: 80px;
+        }
+    }
+
+    &__autor-data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__autor-title {
+        font-weight: 600;
+        color: $accent;
+    }
+
+    &__autor-description {
+        font-size: 1.1rem;
+        letter-spacing: 3px;
+    }
+
+    &__autor-title, &__autor-description {
+        margin: 0 10px;
+        letter-spacing: 3px;
+    }
+
+    &__annotation  {
+        letter-spacing: 1px;
+        font-size: 1.2rem;
+    }
+    
+    &__link-to-article {
+        text-decoration: none;
+    }
+}
+
+.reflux-condenser {
+    background: url(./img/deflegmator.jpg) center/cover no-repeat;
+}
+
+
+//------------------------------------footer----------------------------------------------//
+
+.footer {
+    width: 100%;
+    height: 150px;
+    background-color: $gray;
+    padding-top: 1px;
+
+    &__copywrite {
+        font-size: 0.9rem;
+        color: white;
+        margin: 100px 0 0 20px;
+    }
+}
+
+//---------------------------------and footer----------------------------------------------//
+
+

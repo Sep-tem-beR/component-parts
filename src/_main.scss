@@ -1,6 +1,8 @@
 /* ----------------colors------------------ */
 $accent: hsl(185, 50%, 38%);
-$gray: hsl(0, 0%, 30%);;
+$accent-light: hsla(185, 50%, 38%,.5);
+$gray: hsl(0, 0%, 30%);
+$white-transparent: hsla(0, 100%, 100%, 0.1);
 
 * {
     box-sizing: border-box;
